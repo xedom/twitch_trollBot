@@ -1,0 +1,22 @@
+{
+  "name": "twitch_trollbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xedom/twitch_trollBot.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xedom/twitch_trollBot/issues"
+  },
+  "homepage": "https://github.com/xedom/twitch_trollBot#readme",
+  "dependencies": {
+    "tmi.js": "^1.5.0"
+  }
+}
