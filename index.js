@@ -38,8 +38,7 @@ client.on('connected', (add, port) => {
         };
 
         ready = true;
-        fraseScelta = fraseScelta >= msg.phrases.length-1 ? fraseScelta++ : 0;
-
+        fraseScelta = fraseScelta <= msg.phrases.length-1 ? fraseScelta++ : 0;
 
     }, msg.cooldown*1000)
 });
