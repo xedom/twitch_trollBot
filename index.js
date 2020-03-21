@@ -11,7 +11,9 @@ const splitPhrase = s => s.includes('|') ? s.split('|') : [s];
 const printPhrases = async (phrase) => {
     const phraseArray = splitPhrase(phrase);
     for (let i = 0; i < phraseArray.length; i++) {
-        client.say(`${cfg.channels[0]}`, phraseArray[i]);
+        cfg.channels.forEach(channel => {
+            client.say(`${channel}`, phraseArray[i]);
+        });
         await attesa(2);
     }
 };
@@ -19,7 +21,7 @@ const printPhrases = async (phrase) => {
 const client = new tmi.Client({
     options: { debug: true },
     connection: { reconnect: true, secure: true },
-    identity: cfg.bots[1],
+    identity: cfg.bots[2],
     channels: cfg.channels
 });
 
